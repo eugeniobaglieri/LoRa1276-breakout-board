@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+LIBS:LoRa-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LoRa-rescue:LORA1276-RF U1
+U 1 1 5C76E319
+P 5400 4600
+F 0 "U1" H 4900 7765 50  0000 C CNN
+F 1 "LORA1276" H 4900 7674 50  0000 C CNN
+F 2 "RF_Module:LORA1276" H 5400 4600 50  0001 C CNN
+F 3 "" H 5400 4600 50  0001 C CNN
+	1    5400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1800 5900 1800
+Wire Wire Line
+	5900 1800 5900 1200
+Wire Wire Line
+	5900 1200 4150 1200
+Wire Wire Line
+	4150 1200 4150 1700
+Wire Wire Line
+	4150 1700 4300 1700
+$Comp
+L power:GND #PWR0101
+U 1 1 5C76EFB0
+P 5900 1900
+F 0 "#PWR0101" H 5900 1650 50  0001 C CNN
+F 1 "GND" H 5905 1727 50  0000 C CNN
+F 2 "" H 5900 1900 50  0001 C CNN
+F 3 "" H 5900 1900 50  0001 C CNN
+	1    5900 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1900 5900 1800
+Connection ~ 5900 1800
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5C76F15A
+P 5900 2700
+F 0 "#PWR0102" H 5900 2550 50  0001 C CNN
+F 1 "+3.3V" H 5915 2873 50  0000 C CNN
+F 2 "" H 5900 2700 50  0001 C CNN
+F 3 "" H 5900 2700 50  0001 C CNN
+	1    5900 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2700 5900 3000
+Wire Wire Line
+	5900 3000 5250 3000
+$Comp
+L Device:C C2
+U 1 1 5C76FE09
+P 4700 3250
+F 0 "C2" H 4815 3296 50  0000 L CNN
+F 1 "100nF" H 4815 3205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4738 3100 50  0001 C CNN
+F 3 "~" H 4700 3250 50  0001 C CNN
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5C76EE92
+P 5250 3250
+F 0 "C1" H 5368 3296 50  0000 L CNN
+F 1 "10uF" H 5368 3205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5288 3100 50  0001 C CNN
+F 3 "~" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3100 4700 3000
+Wire Wire Line
+	5250 3100 5250 3000
+Connection ~ 5250 3000
+Wire Wire Line
+	5250 3000 4700 3000
+$Comp
+L power:GND #PWR0103
+U 1 1 5C76F750
+P 5000 3600
+F 0 "#PWR0103" H 5000 3350 50  0001 C CNN
+F 1 "GND" H 5005 3427 50  0000 C CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3400 4700 3550
+Wire Wire Line
+	4700 3550 5000 3550
+Wire Wire Line
+	5250 3550 5250 3400
+Wire Wire Line
+	5000 3600 5000 3550
+Connection ~ 5000 3550
+Wire Wire Line
+	5000 3550 5250 3550
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5C79BF42
+P 3700 2400
+F 0 "J1" H 3620 1675 50  0000 C CNN
+F 1 "Conn_01x10" H 3620 1766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Horizontal" H 3700 2400 50  0001 C CNN
+F 3 "~" H 3700 2400 50  0001 C CNN
+	1    3700 2400
+	-1   0    0    1   
+$EndComp
+NoConn ~ 4300 1800
+NoConn ~ 4300 1900
+Wire Wire Line
+	4150 1700 3900 1700
+Wire Wire Line
+	3900 1700 3900 1900
+Connection ~ 4150 1700
+Wire Wire Line
+	3900 2000 4300 2000
+Wire Wire Line
+	3900 2100 4300 2100
+Wire Wire Line
+	3900 2200 4300 2200
+Wire Wire Line
+	3900 2300 4300 2300
+Wire Wire Line
+	3900 2400 4300 2400
+Wire Wire Line
+	3900 2500 4300 2500
+Wire Wire Line
+	3900 2600 4300 2600
+Connection ~ 4700 3000
+Wire Wire Line
+	4300 2800 4000 2800
+Wire Wire Line
+	4000 2800 4000 2700
+Wire Wire Line
+	4000 2700 3900 2700
+Wire Wire Line
+	3900 2800 3900 3000
+Wire Wire Line
+	3900 3000 4200 3000
+Wire Wire Line
+	4300 2700 4200 2700
+Wire Wire Line
+	4200 2700 4200 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 3000 4700 3000
+$EndSCHEMATC
